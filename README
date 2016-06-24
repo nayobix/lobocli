@@ -1,0 +1,34 @@
+This command line utility is intended to be used for
+loboris WifiMcu implementation for EMW3165
+(https://github.com/loboris/MICO)
+
+
+$ lobocli.py --help
+usage: lobocli.py [-h] [--serial SERIAL] [--baud BAUD]
+                  [--uploadfile UPLOADFILE] [--readfile READFILE] [-d]
+                  [command [command ...]]
+
+Lobo CLI
+
+positional arguments:
+  command
+                            Commands: [default: none]:
+                               ver
+                               info
+                               mem
+                               reboot
+
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --serial SERIAL       Serial port. Default: /dev/ttyUSB0
+  --baud BAUD           Baud rate. Default: 115200
+  --uploadfile UPLOADFILE
+                        File upload.
+  --readfile READFILE   File read.
+  -d, --debug           Debug mode
+
+    Command line tool for emw3165 operations - file read/write/ver and so on
+    Implemented for MICO Lobo wifimcu modification
+
+    Usage: lobocli.py [--option] command
